@@ -1,3 +1,3 @@
 # DockerImages
 
-My own project
+My own project of Docker images for personal work
