@@ -1,7 +1,7 @@
 ## Instructions
 
 ```
-    docker run -ti --rm -v /c/Users/YOUR_USER/Proyectos/folder/:/usr/src/app -p 4200:4200 -p 49153:49153 -p 9876:9876  frontened_client-angular bash
+    docker run -ti --rm -v /c/Users/YOUR_USER/Proyectos/folder/:/usr/src/app -p 4200:4200 -p 49153:49153 -p 9876:9876 -p 49152:49152 frontened_client-angular bash
 
     # Create a new Project
     ng new Project_name --directory .
