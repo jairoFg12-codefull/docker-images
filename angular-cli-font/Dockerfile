@@ -5,13 +5,13 @@ LABEL authors="Jairo Fdez <jairofdezvega@gmail.com>"
 # prepare a user which runs everything locally! - required in child images!
 RUN useradd --user-group --create-home --shell /bin/false app
 
-## Extras for protactor
+## Extras for protactor ejejmop
 RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
     && apt-get update && apt-get install -y Xvfb google-chrome-stable \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD xvfb.sh /etc/init.d/xvfb
+ADD xvfb.sh /etc/init.d/xvfb 
 ADD entrypoint.sh /entrypoint.sh
 
 ENV DISPLAY :99.0
