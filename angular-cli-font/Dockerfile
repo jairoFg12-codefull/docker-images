@@ -1,6 +1,6 @@
 FROM node:6.9
-MAINTAINER jairofdezvega@gmail.com
-LABEL authors="Jairo Fdez <jairofdezvega@gmail.com>"
+MAINTAINER jairoFg12
+LABEL authors="Jairo Fdez <jairog12@outlook.com>"
 
 # prepare a user which runs everything locally! - required in child images!
 RUN useradd --user-group --create-home --shell /bin/false app
