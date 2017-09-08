@@ -8,5 +8,5 @@ services:
      - "9876:9876"
      - "49152:49152"
     volumes:
-     - ./:/usr/src/app  
-    command: bash
+     - ./.:/usr/src/app  
+    entrypoint: npm start
