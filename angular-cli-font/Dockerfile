@@ -25,7 +25,7 @@ ENV HOME=/usr/src/app
 RUN mkdir $HOME
 WORKDIR $HOME
 
-RUN npm install -g @angular/cli && npm cache clean
+RUN npm install -g @angular/cli && npm install -g angular-cli-ghpages && npm cache clean
 
 EXPOSE 4200
 EXPOSE 49153
